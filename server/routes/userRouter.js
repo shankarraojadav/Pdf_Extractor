@@ -1,7 +1,8 @@
 import express from "express";
 import { userController, verifyToken } from "../controllers/userController.js";
-import { PdfUploader, getPdfHistory, pdfExtract } from "../controllers/pdfuploader.js";
+import { getPdfHistory, pdfExtract } from "../controllers/pdfuploader.js";
 import uploader from "../middlewares/uploader.js";
+import { PdfUploader } from "../controllers/pdfuploader.js";
 import { Auth } from "../middlewares/auth.js";
 
 const router = express.Router();
