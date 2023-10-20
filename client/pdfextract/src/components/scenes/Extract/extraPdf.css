@@ -1,0 +1,21 @@
+.pdfviewer {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.9);
+    margin-top: 10vh;
+}
+
+
+.checkbox-input {
+    width: 5vh;
+    height: 5vh; 
+    margin: 1vh;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,27 @@
+
+  .custom-file-uploader input {
+    display: inline-block;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 18px;
+    position: relative;
+    width: 300px;
+
+  }
+  
+  .custom-file-input input {
+    display: none;
+  }
+  
+  .custom-file-input span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .selected-file {
+    margin-top: 10px;
+  }
+  

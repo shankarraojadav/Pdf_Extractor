@@ -1,0 +1,37 @@
+.pdfviewer {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.9);
+}
+
+.pdf_page {
+    overflow-y: scroll;
+    height: 600px
+}
+
+.checkbox-input {
+    width: 5vh;
+    height: 5vh; 
+    margin: 1vh;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 500px) {
+    .pdf_page {
+        height: 700px
+    }
+}
+
+@media (max-width: 400px) {
+    .pdf_page {
+        height: 900px
+    }
+}
