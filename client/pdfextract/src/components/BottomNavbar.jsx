@@ -33,7 +33,7 @@ export default function BottomNavbar({ photoURL }) {
       sx={{
         position: "fixed",
         bottom: "0",
-        mt: "90vh",
+        mt: "86vh",
         display: "none",
         [theme.breakpoints.down("ms2")]: { display: "block" },
         
