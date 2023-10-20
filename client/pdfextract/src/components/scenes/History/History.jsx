@@ -3,8 +3,9 @@ import { pdfhistory } from "../../../state/api";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, Button, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-
+import {theme} from "../../../theme";
 import "./pdfhistory.css";
+
 
 export default function History() {
   const dispatch = useDispatch();
@@ -59,7 +60,8 @@ export default function History() {
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPKWx4iYn0kFvYU7DAQVrlLbn4E-8cpMan1Q&usqp=CAU"
                 alt=""
-                width="180"
+                width="100vh"
+                
               />
             </a>
           </Box>

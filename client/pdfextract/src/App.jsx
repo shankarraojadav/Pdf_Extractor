@@ -41,7 +41,7 @@ export default function App() {
         <Route path="/history" element={<History />} />
         <Route path="/extract" element={<Extract />} />
       </Routes>
-     <BottomNavbar />
+      {isLoggedIn && <BottomNavbar />}
     </Box>
   );
 }
