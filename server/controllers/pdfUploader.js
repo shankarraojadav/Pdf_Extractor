@@ -5,7 +5,7 @@ import axios from "axios";
 import fs from "fs";
 import { PDFDocument } from "pdf-lib";
 
-export const PdfUploader = async (req, res) => {
+export const uploadPdf = async (req, res) => {
   try {
     const { file } = req;
     const { _id } = req.user;
