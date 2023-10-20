@@ -46,7 +46,7 @@ export default function PdfViewer() {
                 />
                 <label htmlFor={`page_${index + 1}`}>Click here to select Page {index + 1}</label>
               </Box>
-              <Page pageNumber={index + 1} width={window.innerWidth - 20} />
+              <Page pageNumber={index + 1} width={window.innerWidth - 40} />
             </Box>
           ))}
         </Box>
@@ -55,8 +55,8 @@ export default function PdfViewer() {
         sx={{
           position: "fixed",
           left: "50%",
-          transform: "translateX(-50%)", // Center the button horizontally
-          bottom: "20px", // Adjust the position from the bottom
+          transform: "translateX(-50%)", 
+          bottom: "30vh", 
         }}
       >
         <Button variant="contained" onClick={handleExtract}>

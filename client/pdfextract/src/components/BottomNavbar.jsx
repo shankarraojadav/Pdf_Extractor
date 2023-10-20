@@ -36,10 +36,7 @@ export default function BottomNavbar({ photoURL }) {
         mt: "90vh",
         display: "none",
         [theme.breakpoints.down("ms2")]: { display: "block" },
-        [theme.breakpoints.down("ms")]: { mt:"110vh" },
-        [theme.breakpoints.down("ms1")]: { mt:"135vh" },
-        [theme.breakpoints.down("ms3")]: { mt:"150vh" },
-        [theme.breakpoints.down("ms4")]: { mt:"160vh" },
+        
       }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-around" }}>

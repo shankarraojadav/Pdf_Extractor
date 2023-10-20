@@ -43,12 +43,17 @@ export default function Extract() {
         <div style={{ overflowY: "scroll", height: "600px" }}>
           {Array.from(new Array(numPages), (el, index) => (
             <div key={`page_${index + 1}`} className="pdfview">
-              <Page pageNumber={index + 1} width={800} />
+              <Page pageNumber={index + 1}  width={window.innerWidth - 40} />
             </div>
           ))}
         </div>
       </Document>
-      <Box sx={{ position: "fixed", ml: "160vh", mt: "-20vh" }}>
+      <Box sx={{
+          position: "fixed",
+          left: "50%",
+          transform: "translateX(-50%)", 
+          bottom: "30vh", 
+        }}>
         <Button variant="contained" onClick={handleDownload}>
           <Typography sx={{ fontSize: "4vh", fontWeight: "bold" }}>
             Download
