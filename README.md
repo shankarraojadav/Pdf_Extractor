@@ -24,11 +24,12 @@ App Features:
 
 
 
-4) Upload form                  : Either drag and drop or manually upload the pdf files
+3) Upload form                  : Either drag and drop or manually upload the pdf files
                                  ![p2](https://github.com/shankarraojadav/Pdf_Extractor/assets/60125498/66e68148-8155-4b93-b22d-7f5fff8b15ed)
 
 
-5) Perform Extract and download : ![p5](https://github.com/shankarraojadav/Pdf_Extractor/assets/60125498/e7f3f06f-02e5-41dd-8f5a-eb8b512f622b)
+4) Perform Extract and download :  Files are stored in cloudinary and the cloudinary url is stored in mongodb atlas.
+                                  ![p5](https://github.com/shankarraojadav/Pdf_Extractor/assets/60125498/e7f3f06f-02e5-41dd-8f5a-eb8b512f622b)
 
 
 
