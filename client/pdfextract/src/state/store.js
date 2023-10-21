@@ -5,10 +5,10 @@ import pdfHistoryReducer from "./pdfHistorySlice";
 import pdfExtraReducer from "./extractedPdfSlice";
 
 export const store = configureStore({
-    reducer: {
-        signin: googleReducer,
-        pdfData: pdfReducer,
-        pdfHistory: pdfHistoryReducer,
-        extractedPdfs: pdfExtraReducer,
-    }
+  reducer: {
+    signin: googleReducer,
+    pdfData: pdfReducer,
+    pdfHistory: pdfHistoryReducer,
+    extractedPdfs: pdfExtraReducer,
+  },
 });

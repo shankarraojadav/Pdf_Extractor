@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <Box>
-      {isLoggedIn && <Navbar photoURL={photoURL}  />}
+      {isLoggedIn && <Navbar photoURL={photoURL} />}
 
       <Routes>
         <Route path="/" element={<Login />} />

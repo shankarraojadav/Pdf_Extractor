@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { googleSignIn, verifyToken } from "./api";
 
 const initialState = {
-  user: null , 
+  user: null,
   isLoggedIn: false,
   isLoading: false,
   error: null,
@@ -19,11 +19,11 @@ const googleSignSlice = createSlice({
       .addCase(googleSignIn.fulfilled, (state, action) => {
         state.user = action.payload;
         state.isLoggedIn = true;
-        state.isLoading = false; 
+        state.isLoading = false;
       })
       .addCase(googleSignIn.rejected, (state, action) => {
         state.isLoading = false;
-        state.error = action.payload.message 
+        state.error = action.payload.message;
       })
       .addCase(verifyToken.pending, (state) => {
         state.isLoading = true;
@@ -36,7 +36,7 @@ const googleSignSlice = createSlice({
       .addCase(verifyToken.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload.message;
-      })
+      });
   },
 });
 

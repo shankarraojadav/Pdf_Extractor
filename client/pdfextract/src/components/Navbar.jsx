@@ -12,11 +12,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { theme } from "../theme";
 
-
 export default function Navbar({ photoURL }) {
+  
   const navigate = useNavigate();
 
   const [anchorEl, setAnchorEl] = useState(null);
+
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -32,7 +33,7 @@ export default function Navbar({ photoURL }) {
     window.location.reload();
   };
   return (
-    <AppBar position="fixed" >
+    <AppBar position="fixed">
       <Toolbar
         sx={{
           background: "#fff",

@@ -18,11 +18,11 @@ const pdfHistorySlice = createSlice({
       .addCase(pdfhistory.fulfilled, (state, action) => {
         state.pdfFiles = action.payload;
         state.isLoading = false;
-        state.error = null; 
+        state.error = null;
       })
       .addCase(pdfhistory.rejected, (state, action) => {
         state.isLoading = false;
-        state.error = action.error.message; 
+        state.error = action.error.message;
       });
   },
 });

@@ -39,7 +39,7 @@ export default function History() {
           component="img"
           src="https://res.cloudinary.com/dflhxdxgb/image/upload/v1697788463/alligator_mc6c8r.jpg"
           sx={{
-            width: "60vh",
+            width: "40vh",
           }}
         />
 
