@@ -12,6 +12,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { theme } from "../theme";
 
+
 export default function Navbar({ photoURL }) {
   const navigate = useNavigate();
 
@@ -26,10 +27,12 @@ export default function Navbar({ photoURL }) {
 
   const handleLogout = () => {
     localStorage.removeItem("jwt");
+
     navigate("/");
+    window.location.reload();
   };
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" >
       <Toolbar
         sx={{
           background: "#fff",

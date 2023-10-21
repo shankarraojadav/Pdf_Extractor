@@ -12,7 +12,7 @@ export default function History() {
 
   const navigate = useNavigate();
 
-  const { pdfFiles, isLoading } = useSelector((state) => state.pdfHistory);
+  const { pdfFiles, isLoading } = useSelector((state) => state.pdfHistory || {});
   console.log(pdfFiles);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function History() {
     navigate("/pdf");
   };
 
-  if (!pdfFiles) {
+  if (pdfFiles == "") {
     return (
       <Box
         sx={{
@@ -32,6 +32,7 @@ export default function History() {
           justifyContent: "center",
           alignItems: "center",
           mt: "10vh",
+          
         }}
       >
         <Box
