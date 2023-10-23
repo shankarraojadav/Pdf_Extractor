@@ -11,7 +11,7 @@ export const googleSignIn = createAsyncThunk(
       
       return response.data;
     } catch (error) {
-      return rejectWithValue(error);
+        return rejectWithValue("Failed to sign in. Please try again.");
     }
   }
 );
@@ -38,7 +38,7 @@ export const verifyToken = createAsyncThunk(
       return response.data;
     } catch (error) {
       console.error(error);
-      return rejectWithValue(error);
+      return rejectWithValue("Token verification failed. Please log in again.");
     }
   }
 );
@@ -60,7 +60,7 @@ export const uploadPdf = createAsyncThunk(
       console.log(response);
       return response.data;
     } catch (error) {
-      return rejectWithValue(error);
+      return rejectWithValue("Upload failed, please try after some time.");
     }
   }
 );
@@ -83,7 +83,7 @@ export const pdfhistory = createAsyncThunk(
       return response.data; 
     } catch (error) {
       console.error("Error fetching user history:", error);
-      return rejectWithValue(error.message);
+      return rejectWithValue("Failed to fetch pdf history, please try after some time.");
     }
   }
 );
@@ -115,7 +115,7 @@ export const pdfExtract = createAsyncThunk(
       return response.data;
     } catch (error) {
       console.error(error);
-      return rejectWithValue(error.message);
+      return rejectWithValue("Pdf extract is failed, please try again after some time.");
     }
   }
 );

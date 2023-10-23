@@ -20,17 +20,17 @@ export default function App() {
   const { photoURL } = user || {};
 
   useEffect(() => {
-    if (token) {
-      dispatch(verifyToken(token));
+    if (isLoggedIn && user) {
+      navigate("/pdf")
+    } else if (token) {
+      navigate("/pdf")
     }
-  }, [token]);
-
-  useEffect(() => {
-    if (isLoggedIn) {
-      navigate("/pdf");
+    else {
+      navigate("/")
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, token])
 
+  
   return (
     <Box>
       {isLoggedIn && <Navbar photoURL={photoURL} />}
