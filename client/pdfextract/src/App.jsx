@@ -23,13 +23,13 @@ export default function App() {
     if (token) {
       dispatch(verifyToken(token));
     }
-  }, [token]);
+  }, [token, dispatch]);
 
   useEffect(() => {
     if (isLoggedIn) {
       navigate("/pdf");
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, navigate]);
 
   return (
     <Box>
