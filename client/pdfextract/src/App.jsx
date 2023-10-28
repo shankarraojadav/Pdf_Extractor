@@ -20,16 +20,16 @@ export default function App() {
   const { photoURL } = user || {};
 
   useEffect(() => {
-    if (token) {
+    if (!isLoggedIn && token) {
       dispatch(verifyToken(token));
+      console.log("token and isLoggedIn")
     }
-  }, [token, dispatch]);
 
-  useEffect(() => {
     if (isLoggedIn) {
       navigate("/pdf");
+      console.log("isLoggedIn")
     }
-  }, [isLoggedIn, navigate]);
+  }, [token, isLoggedIn, dispatch, navigate]);
 
   return (
     <Box>
